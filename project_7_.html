@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Website | MasterChef.com</title>
+    <link rel="stylesheet" href="project_7_.css">
+    <!-- This CSS stylesheet is specially linked for PHONE-Responsiveness. For upto screen of width 0px to 1562px this CSS will be included. Remember MediaQuery.-->
+    <link rel="stylesheet" href="project_7_forPhone.css">
+    <script src="project_7_.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVIGATION BAR AT THE TOP -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="Masterchef.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services">Food Menu</a></li>
+            <li class="item"><a href="#services_container">Services</a></li>
+            <li class="item"><a href="#client_section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- SECTION JUST NEXT TO NAVIGATION BAR -->
+    <section id="home">
+        <h1 class="h_primary">Welcome to MasterChef.Com</h1>
+        <p><span id="line1">Want a delicious meal, But no time ? Don't Worry, We are Here for you.</span><br> <span
+                id="line2">A hungry must not go to food, the food will go to hungry. We at <b><u><span
+                            id="imp_word1">MasterChef.com</span></u></b> will rescue you from the aggression of hunger.
+                Just order and wait for a while we’ll be there at your door, with happiness and best taste packed in our
+                food.</span> </p>
+        <br>
+        <p><span id="line3">So what are you waiting for ? Try now the Best Taste cooked by the <span
+                    id="imp_word2">'Best Chefs'.</span></span>
+        </p>
+        <button class="btn">Order Now</button>
+    </section>
+    <!-- Now next section for services -->
+    <section id="services_container">
+        <h1 class="h_primary center" id="service_line">Our Services for you</h1>
+        <div id="services">
+            <div class="box">
+                <img src="service_1.png" alt="Image Not Loaded">
+                <h2 class="h_secondary center">Fast-Food Delivery</h2>
+                <p class="center" id="line4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti animi dolore ut consequatur fugiat
+                    recusandae ipsam veniam accusamus, voluptatem error vel voluptatum sunt est. Vitae.
+                </p>
+            </div>
+            <div class="box">
+                <img src="service_2.png" alt="Image Not Loaded">
+                <h2 class="h_secondary center">Meal Delivery</h2>
+                <p class="center" id="line5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti animi dolore ut consequatur fugiat
+                    recusandae ipsam veniam accusamus, voluptatem error vel voluptatum sunt est. Vitae.
+                </p>
+            </div>
+            <div class="box">
+                <img src="service_3.png" alt="Image Not Loaded">
+                <h2 class="h_secondary center">Food Catering</h2>
+                <p class="center" id="line6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti animi dolore ut consequatur fugiat
+                    recusandae ipsam veniam accusamus, voluptatem error vel voluptatum sunt est. Vitae.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Now next section for displaying the clients -->
+    <section id="client_section">
+        <h1 class="h_primary center">Our Clients</h1>
+        <div class="clients">
+            <div class="client_item">
+                <img src="client_logo1.png" alt="Image Not Loaded">
+            </div>
+            <div class="client_item">
+                <img src="client_logo2.png" alt="Image Not Loaded">
+            </div>
+            <div class="client_item">
+                <img src="client_logo3.png" alt="Image Not Loaded">
+            </div>
+            <div class="client_item">
+                <img src="client_logo4.png" alt="Image Not Loaded">
+            </div>
+        </div>
+    </section>
+    <!-- Now next section for Contact Form -->
+    <section id="contact">
+        <h1 class="h_primary center">Contact Us</h1>
+        <div id="contact_box">
+            <form action="">
+                <fieldset>
+                    <legend class="center" style="padding:8px;">Message/feedback/Query</legend>
+                    <div class="form_group">
+                        <label for="name">Name:</label><br>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                    </div><br>
+                    <div class="form_group">
+                        <label for="age">Age:</label><br>
+                        <input type="number" max="100" min="1" step="1" name="age" id="age" placeholder="Enter Your Age"
+                            required>
+                    </div><br>
+                    <div class="form_group">
+                        <label for="emailid">Email ID:</label><br>
+                        <input type="text" name="emailid" id="emailid" placeholder="Enter Your Email-ID" required>
+                    </div><br>
+                    <div class="form_group">
+                        <label for="contact">Phone Number:</label><br>
+                        <input type="text" name="contact" id="contact" placeholder="Enter Your Phone Number" required>
+                    </div><br>
+                    <div class="form_group">
+                        <label for="message">Any Message/Feedback for us:</label><br>
+                        <textarea rows="5" cols="10" name="message" id="message"
+                            placeholder="Type your Message/Feedback here." required></textarea>
+                    </div>
+                    <div class="form_group">
+                        <input type="Submit" class="btn" Value="CLICK to Send this Message">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MasterChef.com . All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+ /*When width of screen is greater than 1562px then old CSS Sheet will work for website */
+
+    /*When screen width is bw 0 to 1562px then this CSS sheet will over write Old CSS in this way : */
+    /*(CASE-1)The properties which are ONLY present in Old CSS , those will remain active as it is everytime.*/
+    /* (CASE-2)The properties which are ONLY present in this New CSS will ALSO (along with other old CSS properties) become active when width size  is 0 to 1103px. */
+    /* (CASE-3)The properties which are present in both CSS But their parameters(values) are different then for 0 to 1103px width this New CSS properties will be active otherwise old CSS properties willl be active. */
+
+@media only screen and (max-width: 1562px)
+{
+/* Navigation */
+#navbar
+{
+    flex-direction: column;
+}
+#navbar ul li a
+{
+    font-size: 1.1rem;
+    padding: 0.4vw 1.4vw;
+}
+
+/* Home Section */
+#home
+{
+    height:99vh;
+    padding: 1vh 6vw;
+}
+#home::before
+{
+    height:125%;
+}
+#home p
+{
+    font-size: 1.28rem;
+}
+/* Services Section */
+#services
+{
+    flex-direction:column;
+
+}
+ #services p
+{
+    font-size: 1.3rem;
+} 
+#services .box
+{
+    padding: 25px 8px;
+}
+
+/* Clients Section */
+.clients
+{
+    flex-wrap: wrap;
+}
+.clients img
+{
+    max-width:100px;
+    max-height:100px;
+}
+
+/* Contact Us Section */
+#contact_box form
+{
+    width:92%;
+}
+
+/* Utility Classes */
+.h_primary
+{
+    font-size: 1.9rem;
+}
+.h_secondary
+{
+    font-size:1.5rem;
+}
+#contact_box input, #contact_box textarea
+{
+    width:88%;
+}
+}
